@@ -41,12 +41,12 @@
           <p class="hero-note" data-en="Currently open to opportunities" data-id="Terbuka untuk kesempatan kerja">Currently open to opportunities</p>
         </div>
 
-        <div class="hero-art" aria-label="Decorative monogram illustration" role="img">
+        <div class="hero-art">
           <div class="art-grid"></div>
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
           <div class="art-sun"></div>
-          <div class="monogram">M<span>H</span></div>
+          <img class="hero-portrait" src="assets/miftah-portrait.jpg" alt="Portrait of Miftah against a light green graphic background" width="1024" height="765" decoding="async" />
           <div class="art-caption art-caption-top"><span>01</span><span data-en="PORTFOLIO / 2026" data-id="PORTOFOLIO / 2026">PORTFOLIO / 2026</span></div>
           <div class="art-caption art-caption-bottom"><span data-en="MADE IN SURABAYA" data-id="DIBUAT DI SURABAYA">MADE IN SURABAYA</span><span class="caption-mark">✳</span></div>
           <span class="art-side-note" data-en="A WORK IN PROGRESS" data-id="SEDANG DIKEMBANGKAN">A WORK IN PROGRESS</span>
@@ -84,10 +84,55 @@
             <div><p class="section-index">03 / <span data-en="SELECTED WORK" data-id="KARYA PILIHAN">SELECTED WORK</span></p><h2 id="work-title" data-en="Projects & experience" data-id="Proyek & pengalaman">Projects &amp; experience</h2></div>
             <p class="heading-aside" data-en="A growing collection" data-id="Kumpulan karya yang terus bertambah">A growing collection</p>
           </div>
-          <article class="empty-work-card">
-            <div class="empty-card-art" aria-hidden="true"><span class="empty-shape shape-a"></span><span class="empty-shape shape-b"></span><span class="empty-cross">+</span><span class="empty-card-label">WORK<br />ARCHIVE</span></div>
-            <div class="empty-card-copy"><span class="project-number">01 — 00</span><h3 data-en="The next project starts here." data-id="Proyek berikutnya dimulai di sini.">The next project starts here.</h3><p data-en="Project details and internship experience will be added once they’re ready to share." data-id="Detail proyek dan pengalaman magang akan ditambahkan setelah siap untuk dibagikan.">Project details and internship experience will be added once they’re ready to share.</p><span class="coming-soon"><span class="status-dot"></span><span data-en="PORTFOLIO IN PROGRESS" data-id="PORTOFOLIO SEDANG DIKEMBANGKAN">PORTFOLIO IN PROGRESS</span></span></div>
-          </article>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-cover fortnite-cover">
+                <img class="project-cover-image" src="assets/fortnite-landing.png" alt="Screenshot of the Fortnite Drop In landing page" width="1912" height="3052" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-card-content">
+                <div class="project-type"><span>WEB DESIGN</span><span>2026</span></div>
+                <h3>Fortnite — Drop In</h3>
+                <p data-en="A fan-made Fortnite landing page with a bold game-inspired look, featuring Battle Royale, Creative, and Pure Combat." data-id="Landing page fan-made bertema Fortnite dengan tampilan khas game, menampilkan Battle Royale, Creative, dan Pure Combat.">A fan-made Fortnite landing page with a bold game-inspired look, featuring Battle Royale, Creative, and Pure Combat.</p>
+                <div class="project-tags" aria-label="Technologies"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <div class="project-actions">
+                  <a class="project-link project-link-primary" href="https://temporary-rushing-crystal-jckbnf0.vercel.app/" target="_blank" rel="noopener noreferrer"><span data-en="Live demo" data-id="Demo langsung">Live demo</span><span aria-hidden="true">↗</span></a>
+                  <a class="project-link project-link-secondary" href="https://github.com/PuyiHakim/miftah-programming-journey/tree/feature/fortnite-homework-session-01" target="_blank" rel="noopener noreferrer"><span data-en="Source code" data-id="Kode sumber">Source code</span><span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-cover relay-cover">
+                <img class="project-cover-image" src="assets/relay-dashboard.png" alt="Screenshot of the Relay customer operations dashboard" width="1912" height="948" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-card-content">
+                <div class="project-type"><span>WEB APPLICATION</span><span>2026</span></div>
+                <h3>Relay</h3>
+                <p data-en="A customer operations workspace for searching, prioritizing, and resolving support cases, with clear workflows for the team." data-id="Workspace operasional pelanggan untuk mencari, memprioritaskan, dan menyelesaikan case dukungan dengan alur kerja yang jelas.">A customer operations workspace for searching, prioritizing, and resolving support cases, with clear workflows for the team.</p>
+                <div class="project-tags" aria-label="Technologies"><span>Next.js</span><span>React</span><span>TypeScript</span></div>
+                <div class="project-actions">
+                  <a class="project-link project-link-primary" href="https://tugas-seven-eta.vercel.app/dashboard" target="_blank" rel="noopener noreferrer"><span data-en="Live demo" data-id="Demo langsung">Live demo</span><span aria-hidden="true">↗</span></a>
+                  <a class="project-link project-link-secondary" href="https://github.com/PuyiHakim/tugas" target="_blank" rel="noopener noreferrer"><span data-en="Source code" data-id="Kode sumber">Source code</span><span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-cover portfolio-cover">
+                <img class="project-cover-image" src="assets/miftah-portrait.jpg" alt="Miftah wearing a suit against a light green graphic background" width="1024" height="765" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-card-content">
+                <div class="project-type"><span>PORTFOLIO WEBSITE</span><span>2026</span></div>
+                <h3 data-en="Personal portfolio" data-id="Portofolio pribadi">Personal portfolio</h3>
+                <p data-en="A bilingual portfolio sharing my background, selected projects, and the work opportunities I’m looking for." data-id="Portofolio bilingual yang memuat latar belakang, proyek pilihan, dan kesempatan kerja yang sedang saya cari.">A bilingual portfolio sharing my background, selected projects, and the work opportunities I’m looking for.</p>
+                <div class="project-tags" aria-label="Technologies"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <div class="project-actions">
+                  <span class="project-current"><span class="status-dot"></span><span data-en="You’re viewing this site" data-id="Anda sedang melihat situs ini">You’re viewing this site</span></span>
+                  <a class="project-link project-link-secondary" href="https://github.com/PuyiHakim/protofolio" target="_blank" rel="noopener noreferrer"><span data-en="Source code" data-id="Kode sumber">Source code</span><span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -95,7 +140,7 @@
         <div class="section-shell contact-inner">
           <p class="section-index">04 / <span data-en="NEXT STEPS" data-id="LANGKAH BERIKUTNYA">NEXT STEPS</span></p>
           <div class="contact-main"><h2 id="contact-title" data-en="Let’s make the next opportunity count." data-id="Mari manfaatkan kesempatan berikutnya.">Let’s make the next opportunity count.</h2><p data-en="I’m looking for work opportunities. My contact details will be added here soon." data-id="Saya sedang mencari kesempatan kerja. Informasi kontak akan segera ditambahkan di sini.">I’m looking for work opportunities. My contact details will be added here soon.</p></div>
-          <div class="contact-foot"><span data-en="MIFTAH AMIRUDDIN HAKIM GANING" data-id="MIFTAH AMIRUDDIN HAKIM GANING">MIFTAH AMIRUDDIN HAKIM GANING</span><span>SURABAYA · INDONESIA</span><span>© <span id="year">2026</span></span></div>
+          <div class="contact-foot"><span data-en="MIFTAH AMIRUDDIN HAKIM GANING" data-id="MIFTAH AMIRUDDIN HAKIM GANING">MIFTAH AMIRUDDIN HAKIM GANING</span><a class="contact-social-link" href="https://www.linkedin.com/in/miftah-amiruddin-hakim-ganing-650876330/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile for Miftah Amiruddin Hakim Ganing">LinkedIn ↗</a><span>SURABAYA · INDONESIA</span><span>© <span id="year">2026</span></span></div>
           <span class="contact-star" aria-hidden="true">✳</span>
         </div>
       </section>
