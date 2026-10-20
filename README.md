@@ -1,24 +1,23 @@
-# Miftah's Portfolio Landing Page
+# Miftah's Portfolio
 
-A responsive, bilingual (English / Indonesian) portfolio landing page built with plain HTML, CSS, and JavaScript.
+A bilingual (English / Indonesian) personal portfolio built with plain HTML, CSS, and JavaScript for GitHub Pages. There is no build step or package installation.
 
-## Open locally
+## Run locally
 
-Open `index.html` in a browser. No build step or package installation is required.
+Open `index.html` in a browser, or serve this folder with any static file server.
 
 ## Featured projects
 
-The work section features Fortnite — Drop In, Relay, and this portfolio. Each project card includes a short description and technology tags, with demo and source links where available.
+- **Fortnite — Drop In:** fan-made UI practice concept. [Live demo](https://temporary-rushing-crystal-jckbnf0.vercel.app/) · [Source](https://github.com/PuyiHakim/miftah-programming-journey/tree/feature/fortnite-homework-session-01)
+- **Relay:** customer operations dashboard. [Live demo](https://tugas-seven-eta.vercel.app/dashboard) · [Source](https://github.com/PuyiHakim/tugas)
 
-## Personal details to add
+## Details to fill in
 
-The page uses only the details currently provided: Miftah Amiruddin Hakim Ganing, freelancer, based in Surabaya, internship experience, and currently looking for work. Before publishing, add or confirm:
+See the `TODO` comments in `index.html` for information that was not supplied:
 
-- The role or field of work to feature in the headline.
-- A more complete bio and the type of opportunities sought.
-- Skills and tools, once confirmed.
-- Internship dates, organization, role, and responsibilities.
-- A professional email and any profile links that may be shared publicly.
-- A profile photo or preferred visual assets, if desired.
+- Public email address for a mail link.
+- Confirmed role or area of focus.
+- Internship organization, role, dates, and responsibilities.
+- CV/Resume PDF, if available.
 
-The contact area still needs a public email or other preferred contact details.
+The page uses only the provided name, Surabaya location, internship experience, work availability, project links, and the technologies already listed for those projects. No email address or CV is included yet.
