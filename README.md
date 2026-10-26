@@ -10,6 +10,7 @@ Open `index.html` in a browser, or serve this folder with any static file server
 
 - **Fortnite — Drop In:** fan-made UI practice concept. [Live demo](https://temporary-rushing-crystal-jckbnf0.vercel.app/) · [Source](https://github.com/PuyiHakim/miftah-programming-journey/tree/feature/fortnite-homework-session-01)
 - **Relay:** customer operations dashboard. [Live demo](https://tugas-seven-eta.vercel.app/dashboard) · [Source](https://github.com/PuyiHakim/tugas)
+- **Logitech G Steering Wheel:** Unity driving project with Logitech G wheel, pedal, and shifter input. [Source](https://github.com/PuyiHakim/doneLAnjutanLogitechG-main)
 
 ## Details to fill in
 
