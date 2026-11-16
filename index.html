@@ -49,6 +49,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <script src="cinematic.js" defer></script>
     <title data-en="Miftah Amiruddin Hakim Ganing — Portfolio" data-id="Miftah Amiruddin Hakim Ganing — Portofolio">Miftah Amiruddin Hakim Ganing — Portfolio</title>
   </head>
   <body>
@@ -69,30 +70,62 @@
     </header>
 
     <main id="main">
-      <section class="hero section-shell" id="top" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-en="WEB PROJECT CREATOR · SURABAYA, INDONESIA" data-id="PEMBUAT PROYEK WEB · SURABAYA, INDONESIA">WEB PROJECT CREATOR · SURABAYA, INDONESIA</span></p>
-          <h1 id="hero-title"><span data-en="Hello, I’m" data-id="Halo, saya">Hello, I’m</span><br /><span class="name-highlight">Miftah.</span></h1>
-          <p class="hero-intro" data-en="I create web projects from Surabaya, Indonesia. I have internship experience and am open to work opportunities." data-id="Saya membuat proyek web dari Surabaya, Indonesia. Saya memiliki pengalaman magang dan terbuka untuk kesempatan kerja.">I create web projects from Surabaya, Indonesia. I have internship experience and am open to work opportunities.</p>
-          <div class="hero-actions">
-            <a class="button button-dark" href="#work"><span data-en="Explore my work" data-id="Lihat karya saya">Explore my work</span><span class="arrow" aria-hidden="true">↘</span></a>
-            <a class="text-link" href="#contact"><span data-en="Get in touch" data-id="Hubungi saya">Get in touch</span><span aria-hidden="true">↗</span></a>
-            <!-- TODO: Add a Download CV button here when a CV PDF is available. -->
-          </div>
-          <p class="hero-note"><span class="status-dot" aria-hidden="true"></span><span data-en="Currently open to work opportunities" data-id="Terbuka untuk kesempatan kerja">Currently open to work opportunities</span></p>
-        </div>
+      <section class="cinematic-scroll" id="top" aria-labelledby="hero-title" data-cinematic-section>
+        <div class="cinematic-stage">
+          <div
+            class="cinematic-progress"
+            id="cinematic-progress"
+            role="progressbar"
+            aria-label="Cinematic introduction progress"
+            data-en-aria="Cinematic introduction progress"
+            data-id-aria="Progres pengantar sinematik"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"
+          ></div>
+          <img
+            class="cinematic-poster"
+            src="assets/portfolio-cinematic-poster.webp"
+            alt=""
+            width="1920"
+            height="1080"
+            decoding="async"
+            fetchpriority="high"
+          />
+          <video
+            class="cinematic-video"
+            muted
+            playsinline
+            preload="none"
+            fetchpriority="low"
+            aria-hidden="true"
+            tabindex="-1"
+            disablepictureinpicture
+            data-cinematic-video
+          >
+            <source data-src="assets/portfolio-cinematic.mp4" type="video/mp4" />
+          </video>
+          <div class="cinematic-shade" aria-hidden="true"></div>
 
-        <div class="hero-art" role="img" aria-label="Portrait of Miftah against a light green graphic background" data-en-aria="Portrait of Miftah against a light green graphic background" data-id-aria="Foto Miftah dengan latar grafis hijau muda">
-          <div class="art-grid" aria-hidden="true"></div>
-          <div class="orbit orbit-one" aria-hidden="true"></div>
-          <div class="orbit orbit-two" aria-hidden="true"></div>
-          <div class="art-sun" aria-hidden="true"></div>
-          <img class="hero-portrait" src="assets/miftah-portrait.jpg" alt="" width="1024" height="765" decoding="async" fetchpriority="high" />
-          <div class="art-caption art-caption-top" aria-hidden="true"><span>01</span><span data-en="PORTFOLIO / 2026" data-id="PORTOFOLIO / 2026">PORTFOLIO / 2026</span></div>
-          <div class="art-caption art-caption-bottom" aria-hidden="true"><span data-en="MADE IN SURABAYA" data-id="DIBUAT DI SURABAYA">MADE IN SURABAYA</span><span class="caption-mark">✳</span></div>
-          <span class="art-side-note" aria-hidden="true" data-en="A WORK IN PROGRESS" data-id="SEDANG DIKEMBANGKAN">A WORK IN PROGRESS</span>
+          <div class="cinematic-intro" data-cinematic-intro>
+            <p class="cinematic-eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-en="PORTFOLIO / 2026" data-id="PORTOFOLIO / 2026">PORTFOLIO / 2026</span></p>
+            <h1 id="hero-title">Miftah<span class="cinematic-period">.</span></h1>
+            <p class="cinematic-role" data-en="Web Project Creator · Surabaya, Indonesia" data-id="Pembuat Proyek Web · Surabaya, Indonesia">Web Project Creator · Surabaya, Indonesia</p>
+            <p class="hero-intro" data-en="I create web projects from Surabaya, Indonesia. I have internship experience and am open to work opportunities." data-id="Saya membuat proyek web dari Surabaya, Indonesia. Saya memiliki pengalaman magang dan terbuka untuk kesempatan kerja.">I create web projects from Surabaya, Indonesia. I have internship experience and am open to work opportunities.</p>
+            <p class="hero-note"><span class="status-dot" aria-hidden="true"></span><span data-en="Currently open to work opportunities" data-id="Terbuka untuk kesempatan kerja">Currently open to work opportunities</span></p>
+          </div>
+
+          <div class="cinematic-finale" data-cinematic-finale aria-hidden="true" inert>
+            <p class="cinematic-finale-label" data-en="SELECTED WORK / 03" data-id="KARYA PILIHAN / 03">SELECTED WORK / 03</p>
+            <a class="button button-light cinematic-cta" href="#work"><span data-en="Explore My Work" data-id="Lihat Karya Saya">Explore My Work</span><span aria-hidden="true">↘</span></a>
+          </div>
+
+          <a class="cinematic-skip" href="#work" data-en="Skip intro · View work" data-id="Lewati intro · Lihat karya">Skip intro · View work</a>
+          <a class="scroll-cue" href="#about" data-cinematic-cue>
+            <span class="scroll-cue-line" aria-hidden="true"></span>
+            <span data-en="SCROLL TO EXPLORE" data-id="GULIR UNTUK MELIHAT">SCROLL TO EXPLORE</span>
+          </a>
         </div>
-        <a class="scroll-cue" href="#about"><span class="scroll-line" aria-hidden="true"></span><span data-en="SCROLL TO EXPLORE" data-id="GULIR UNTUK MELIHAT">SCROLL TO EXPLORE</span></a>
       </section>
 
       <section class="intro-band" aria-label="Introduction" data-en-aria="Introduction" data-id-aria="Pengantar">

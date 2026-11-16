@@ -4,7 +4,21 @@ A bilingual (English / Indonesian) personal portfolio built with plain HTML, CSS
 
 ## Run locally
 
-Open `index.html` in a browser, or serve this folder with any static file server.
+Serve the folder over HTTP with byte-range support so the video can seek correctly:
+
+```sh
+npx --yes http-server -p 8000 -a 127.0.0.1
+```
+
+Then open <http://localhost:8000/>. The server runs through `npx`; the site itself has no build step or project dependencies.
+
+## Cinematic introduction
+
+- `assets/portfolio-cinematic.mp4` is the supplied 1080p clip encoded as H.264 with 24 fps playback, AAC audio, fast-start metadata, and half-second keyframes for seeking. The scroll experience keeps it muted.
+- `assets/portfolio-cinematic-poster.webp` is the clip's first frame and remains visible until a video frame is ready or if video loading fails.
+- `cinematic.js` maps the cinematic section's scroll progress to `video.currentTime`. The media is requested near the hero, and reduced-motion, slow-connection, or data-saving settings use the static poster instead.
+
+Keep both media URLs relative to the repository root for GitHub Pages project hosting. The supplied source master was left untouched; only the web delivery encode is stored in `assets/`.
 
 ## Featured projects
 
