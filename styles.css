@@ -58,6 +58,8 @@ h1, h2, h3, p { margin-top: 0; }
 .hero-intro { max-width: 440px; margin: .85rem 0 0; color: #e2e7e0; font-size: .98rem; line-height: 1.65; }
 .cinematic-intro .hero-note { display: flex; align-items: center; gap: .65rem; margin: .85rem 0 0; color: #e2e7e0; font-size: .7rem; letter-spacing: .035em; }
 .cinematic-intro .hero-note .status-dot { background: var(--lime); box-shadow: 0 0 0 4px #c8ef7826; }
+.cinematic-contact-link { min-height: 36px; margin-top: .35rem; border-color: #ffffff70; color: #f4f3ee; font-size: .82rem; }
+.cinematic-contact-link span:last-child { color: var(--lime); }
 .button { min-height: 52px; display: inline-flex; align-items: center; justify-content: center; gap: 1rem; padding: 0 1.2rem; font-size: .875rem; font-weight: 600; }
 .button-dark { color: #f8f8f1; background: var(--ink); transition: background .2s ease, transform .2s ease; }
 .button-dark:hover { background: #314b3c; transform: translateY(-2px); }
@@ -182,6 +184,7 @@ h1, h2, h3, p { margin-top: 0; }
   .cinematic-role { font-size: .72rem; }
   .hero-intro { max-width: 390px; margin-top: .65rem; font-size: .88rem; line-height: 1.5; }
   .cinematic-intro .hero-note { margin-top: .65rem; font-size: .66rem; }
+  .cinematic-contact-link { min-height: 36px; margin-top: .15rem; }
   .cinematic-finale { left: 1.25rem; bottom: 5.5rem; width: calc(100% - 2.5rem); }
   .cinematic-skip { top: .85rem; right: 1.25rem; font-size: .65rem; }
   .cinematic-scroll .scroll-cue { left: 1.25rem; bottom: 1rem; font-size: .63rem; }

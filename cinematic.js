@@ -5,6 +5,7 @@
   const stage = section.querySelector('.cinematic-stage');
   const video = section.querySelector('[data-cinematic-video]');
   const intro = section.querySelector('[data-cinematic-intro]');
+  const contactLink = section.querySelector('.cinematic-contact-link');
   const finale = section.querySelector('[data-cinematic-finale]');
   const progressBar = section.querySelector('#cinematic-progress');
   const scrollCue = section.querySelector('[data-cinematic-cue]');
@@ -88,6 +89,7 @@
     const progress = readProgress();
     const percent = Math.round(progress * 100);
     const introOpacity = 1 - clamp(progress / 0.22);
+    const contactHidden = progress > 0.18;
     const finaleOpacity = clamp((progress - 0.78) / 0.15);
     const cueOpacity = 1 - clamp(progress / 0.055);
 
@@ -99,6 +101,8 @@
 
     intro.style.opacity = String(introOpacity);
     intro.style.transform = `translateY(${(1 - introOpacity) * -8}px)`;
+    contactLink.inert = contactHidden;
+    contactLink.setAttribute('aria-hidden', String(contactHidden));
     finale.style.opacity = String(finaleOpacity);
     finale.style.transform = `translateY(${(1 - finaleOpacity) * 12}px)`;
     finale.inert = progress < 0.83;
